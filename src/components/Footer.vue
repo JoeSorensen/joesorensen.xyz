@@ -16,10 +16,12 @@
                             <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -27,10 +29,12 @@
                     <p class="uppercase text-gray-500 md:mb-6">Legal</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +48,8 @@
                             <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Linkedin</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
                         </li>
                     </ul>
                 </div>
@@ -52,20 +57,24 @@
                     <p class="uppercase text-gray-500 md:mb-6">Company</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Official Blog</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Official
+                                Blog</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">About Us</a>
+                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">About
+                                Us</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+                            <a href="#"
+                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <p class="block text-center text-gray-500">Splash image by TchuMimi. Please keep in mind that currently this website is under active development.</p>
+        <p class="block text-center text-gray-500">Splash image by TchuMimi. Please keep in mind that currently this
+            website is under active development.</p>
 
     </footer>
 </template>
