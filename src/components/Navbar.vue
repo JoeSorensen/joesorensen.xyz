@@ -1,5 +1,5 @@
 <template>
-    <div class="z-0 splash">
+    <div class="absolute w-full splash">
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
@@ -15,6 +15,13 @@
                     <ul class="inline-flex">
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white font-bold" href="">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
+                    </ul>
+                </div>
+                <div v-else class="hidden lg:block" id="nav-content">
+                    <ul class="inline-flex">
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
@@ -81,7 +88,5 @@
      background-size: cover;
       background-position-y: -250px;
       background-position: bottom;
-      /* Needed to position the navbar */
-     position: relative;
     }
 </style>
