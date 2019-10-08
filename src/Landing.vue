@@ -15,10 +15,10 @@
                     </button>
                 </div>
 
-                <div class="hidden lg:block">
+                <div class="hidden lg:block" id="nav-content">
                     <ul class="inline-flex">
                         <li><a class="px-4 text-white font-bold" href="/">Home</a></li>
-                        <li><a class="px-4 text-white hover:text-blue-200" href="#">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
