@@ -29,5 +29,9 @@ module.exports = {
             template: 'public/404.html',
             file: '404.html'
         }
-    }
+    },
+
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/joesorensen.xyz/'
+        : '/'
 }
