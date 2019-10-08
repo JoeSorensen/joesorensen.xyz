@@ -1,10 +1,17 @@
 <template>
-    <div class="h-screen splash"></div>
+    <div class="absolute w-full h-screen splash">
+        <logo text="About Me"/>
+    </div>
 </template>
 
 <script>
+    import Logo from "./components/Logo.vue";
+
     export default {
-        name: "splash"
+        name: "splash",
+        components: {
+            Logo
+        },
     }
 </script>
 
