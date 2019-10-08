@@ -8,8 +8,8 @@ window.addEventListener("load", function() {
     new Vue({
         render: h => h(App),
     }).$mount('#landing');
-
-    new Vue({
-        render: h => h(Footer),
-    }).$mount("#foot");
 });
+
+new Vue({
+    render: h => h(Footer),
+}).$mount("#foot");
