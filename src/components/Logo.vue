@@ -3,7 +3,7 @@
         <transition name="slide-fade" appear>
             <div class="mt-64">
                 <div class="justify-center mb-4">
-                    <div v-if="text === ''">
+                    <div v-if="text === '' || text == null">
                         <img class="mx-auto block" src="../assets/NLogo_White.png" width="650px">
                     </div>
                     <div v-else>

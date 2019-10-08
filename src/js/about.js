@@ -12,6 +12,8 @@ new Vue({
     })
 }).$mount("#nav");
 
-new Vue({
-    render: h => h(About)
-}).$mount('#splash');
+window.addEventListener("load", function() {
+    new Vue({
+        render: h => h(About)
+    }).$mount('#splash');
+});
