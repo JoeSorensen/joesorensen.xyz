@@ -5,9 +5,13 @@ import About from "../About.vue"
 Vue.config.productionTip = false;
 
 new Vue({
-    render: h => h(Navbar)
-}).$mount('#nav');
+    render: h => h(Navbar, {
+        props: {
+            page: "about"
+        }
+    })
+}).$mount("#nav");
 
 new Vue({
     render: h => h(About)
-}).$mount('#splash')
+}).$mount('#splash');

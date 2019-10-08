@@ -1,5 +1,5 @@
 <template>
-    <div class="splash">
+    <div class="z-0 splash">
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
@@ -11,10 +11,10 @@
                     </button>
                 </div>
 
-                <div class="hidden lg:block" id="nav-content">
+                <div v-if="page === 'about'" class="hidden lg:block" id="nav-content">
                     <ul class="inline-flex">
-                        <li><a class="px-4 text-white font-bold" href="/">Home</a></li>
-                        <li><a class="px-4 text-white hover:text-blue-200" href="#">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
+                        <li><a class="px-4 text-white font-bold" href="">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
@@ -26,6 +26,9 @@
 <script>
     export default {
         name: "navbar",
+        props: {
+           page: String
+        },
         mounted() {
             var navMenuDiv = document.getElementById("nav-content");
             var navMenu = document.getElementById("nav-toggle");
