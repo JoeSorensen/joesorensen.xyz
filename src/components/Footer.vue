@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <p class="block text-center text-gray-500">Splash image by TchuMimi. Please keep in mind that currently this
+        <p class="block text-center text-gray-500">Splash image by {{credit}}. Please keep in mind that currently this
             website is under active development.</p>
 
     </footer>
@@ -81,6 +81,9 @@
 
 <script>
     export default {
-        name: 'foot'
+        name: 'foot',
+        props: {
+            credit: String
+        }
     }
 </script>

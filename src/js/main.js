@@ -9,5 +9,9 @@ new Vue({
 }).$mount('#landing');
 
 new Vue({
-    render: h => h(Footer),
-}).$mount("#foot");
+    render: h => h(Footer, {
+        props: {
+            credit: "TchuMimi"
+        }
+    }),
+}).$mount('#foot');
