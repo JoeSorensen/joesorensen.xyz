@@ -16,7 +16,7 @@
         margin: auto;
         padding: 0;
         background-image: url('./assets/heck.png');
-        background-size:100% 100%;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         bottom: 0px;
         top: 120px;

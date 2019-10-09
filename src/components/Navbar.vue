@@ -6,8 +6,12 @@
                     <img src="../assets/NLogo_White.png" width="305" class="px-0">
                 </a>
                 <div class="block lg:hidden pr-4">
-                    <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    <button id="nav-toggle"
+                            class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
+                            Menu</title>
+                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                        </svg>
                     </button>
                 </div>
 
@@ -34,7 +38,7 @@
     export default {
         name: "navbar",
         props: {
-           page: String
+            page: String
         },
         mounted() {
             var navMenuDiv = document.getElementById("nav-content");
@@ -78,15 +82,15 @@
 
 <style scoped>
     .gradient {
-        background: linear-gradient(90deg, rgba(2,0,36,0) 0%, #0700b8 52%, #00ff88 100%);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, #0700b8 52%, #00ff88 100%);
     }
 
     .splash {
         background-image: url('../assets/splash.jpg');
-       /* Center and scale the image nicely */
-     background-repeat: no-repeat;
-     background-size: cover;
-      background-position-y: -250px;
-      background-position: bottom;
+        /* Center and scale the image nicely */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -250px;
+        background-position: bottom;
     }
 </style>
