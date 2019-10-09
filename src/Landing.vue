@@ -98,7 +98,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('./assets/splash.png');
+        background-image: url('./assets/splash.jpg');
 
         /* Center and scale the image nicely */
         background-position: center;

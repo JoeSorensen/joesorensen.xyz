@@ -17,7 +17,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('./assets/COMM_SOREN_2_DRAGONS.png');
+        background-image: url('./assets/about.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
