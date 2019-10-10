@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen splash">
+    <div class="h-screen relative splash">
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
@@ -27,7 +27,7 @@
 
         <logo/>
 
-        <div class="relative -mt-12 lg:-mt-24" style="position: absolute; bottom: 0px; width: 100%;">
+        <div class="absolute bottom-0 w-full -mt-12 lg:-mt-24">
             <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -57,13 +57,13 @@
             Logo
         },
         mounted() {
-            var navMenuDiv = document.getElementById("nav-content");
-            var navMenu = document.getElementById("nav-toggle");
+            const navMenuDiv = document.getElementById("nav-content");
+            const navMenu = document.getElementById("nav-toggle");
 
             document.onclick = check;
 
             function check(e) {
-                var target = (e && e.target) || (event && event.srcElement);
+                const target = (e && e.target) || (event && event.srcElement);
 
                 //Nav Menu
                 if (!checkParent(target, navMenuDiv)) {
@@ -105,8 +105,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        /* Needed to position the navbar */
-        position: relative;
     }
 
     .gradient {

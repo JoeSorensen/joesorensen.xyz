@@ -1,6 +1,6 @@
 <template>
     <div class="absolute w-full h-screen splash">
-        <logo text="About..."/>
+        <logo text="About"/>
     </div>
 </template>
 
