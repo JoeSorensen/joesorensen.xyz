@@ -2,8 +2,8 @@
     <div class="absolute w-full splash">
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                <a class="font-bold text-2xl lg:text-4xl" href="heck">
-                    <img src="../assets/NLogo_White.png" width="305" class="px-0">
+                <a class="font-bold text-2xl lg:text-4xl" href="/" style="margin-bottom: 0.1rem; margin-top: 0.1rem">
+                    <img src="../assets/NLogo_White.png" width="305">
                 </a>
                 <div class="block lg:hidden pr-4">
                     <button id="nav-toggle"
