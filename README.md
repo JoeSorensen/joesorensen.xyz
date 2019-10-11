@@ -1,4 +1,5 @@
 # joesorensen-xyz-vue
+My official website, build on vue-cli.
 
 ## Project setup
 ```
