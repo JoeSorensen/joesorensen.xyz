@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import Logo from "./components/Logo.vue";
+    import Logo from "./Logo.vue";
 
     export default {
         name: "splash",
@@ -17,7 +17,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('./assets/about.jpg');
+        background-image: url('../assets/about.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

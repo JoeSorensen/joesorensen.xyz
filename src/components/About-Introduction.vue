@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-wrap">
         <div class="w-5/6 my-auto sm:w-1/2 p-6">
-            <h3 class="text-3xl text-white font-bold leading-none mb-3">I'm Soren!</h3>
-            <p class="text-gray-400 mb-8">My name is Joe Sorensen (heh, get it?), but I'm more commonly known as Soren.
-                I work part time as a software developer, and make music and art in my spare time.<br/><br/>
+            <h3 class="text-3xl text-white font-bold leading-none mb-3">As I said on the homepage...</h3>
+            <p class="text-gray-400 mb-8">I'm Joe, but please call me Soren. I'm a high school student in the STEM
+                School Highlands Ranch class of 2021.<br/><br/>
 
                 Image by: <a class="hover:underline text-blue-200 mb-8" href="https://www.instagram.com/the_most_floof/"
                              target="_blank">@the_most_floof</a></p>
@@ -20,6 +20,6 @@
 
 <script>
     export default {
-        name: 'introduction'
+        name: 'about-introduction'
     }
 </script>

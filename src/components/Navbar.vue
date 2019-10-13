@@ -6,8 +6,8 @@
                     <img src="../assets/NLogo_White.png" width="305">
                 </a>
                 <div class="block lg:hidden pr-4">
-                    <button id="nav-toggle"
-                            class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none">
+                    <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none"
+                            id="nav-toggle">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
                             Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
@@ -15,14 +15,14 @@
                     </button>
                 </div>
 
-                <div v-if="page === 'about'" class="hidden lg:block" id="nav-content">
+                <div class="hidden lg:block" id="nav-content" v-if="page === 'about'">
                     <ul class="inline-flex">
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white font-bold" href="">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
-                <div v-else class="hidden lg:block" id="nav-content">
+                <div class="hidden lg:block" id="nav-content" v-else>
                     <ul class="inline-flex">
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>

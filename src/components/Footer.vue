@@ -5,7 +5,7 @@
             <div class="w-full flex flex-col md:flex-row py-6">
 
                 <div class="flex-1 mb-5" style="margin-right: 50px">
-                    <img style="filter: invert(100%); margin-right: 100px" src="../assets/NLogo.png">
+                    <img src="../assets/NLogo.png" style="filter: invert(100%); margin-right: 100px">
                 </div>
 
 
@@ -13,15 +13,15 @@
                     <p class="uppercase text-gray-500 md:mb-6">Links</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500" href="#">FAQ</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Help</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Support</a>
                         </li>
                     </ul>
                 </div>
@@ -29,12 +29,12 @@
                     <p class="uppercase text-gray-500 md:mb-6">Legal</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Terms</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -42,14 +42,14 @@
                     <p class="uppercase text-gray-500 md:mb-6">Social</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Facebook</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500" href="#">Facebook</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Linkedin</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500" href="#">Linkedin</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Twitter</a>
                         </li>
                     </ul>
                 </div>
@@ -57,16 +57,16 @@
                     <p class="uppercase text-gray-500 md:mb-6">Company</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Official
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500" href="#">Official
                                 Blog</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#" class="no-underline hover:underline text-gray-800 hover:text-orange-500">About
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500" href="#">About
                                 Us</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a href="#"
-                               class="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+                            <a class="no-underline hover:underline text-gray-800 hover:text-orange-500"
+                               href="#">Contact</a>
                         </li>
                     </ul>
                 </div>

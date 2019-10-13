@@ -1,6 +1,6 @@
 <template>
     <div class="h-screen">
-        <img src="./assets/heck.png" class="heck">
+        <img class="heck" src="../assets/heck.png">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Error 404. The page you were
             looking for wasn't found. Sorry.</h1>
         <div class="w-full mb-4">

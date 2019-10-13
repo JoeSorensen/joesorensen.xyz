@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Navbar from "../components/Navbar.vue";
-import _404 from "../404.vue";
+import _404 from "../pages/404.vue";
 
 Vue.config.productionTip = false;
 

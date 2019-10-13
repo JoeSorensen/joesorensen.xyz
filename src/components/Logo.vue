@@ -1,11 +1,11 @@
 <template>
     <div class="absolute flex items-center w-full h-full">
-        <transition name="slide-fade" appear>
+        <transition appear name="slide-fade">
             <div class="w-full">
-                <div v-if="text === '' || text == null" class="-my-48">
+                <div class="-my-48" v-if="text === '' || text == null">
                     <img class="mx-auto block" src="../assets/NLogo_White.png" width="650px">
                 </div>
-                <div v-else class="-my-32">
+                <div class="-my-32" v-else>
                     <span class="mx-auto block text-6xl font-bold leading-tight text-center text-white">{{text}}</span>
                 </div>
                 <!--<a class="mx-auto block" href="discord">

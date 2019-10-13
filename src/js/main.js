@@ -1,12 +1,14 @@
 import Vue from 'vue'
-import Landing from '../Landing.vue';
+import Home from '../pages/Home.vue';
 import Introduction from '../components/Home-Introduction.vue'
 import Footer from "../components/Footer";
+import browserDetect from "vue-browser-detect-plugin";
 
+Vue.use(browserDetect);
 Vue.config.productionTip = false;
 
 new Vue({
-    render: h => h(Landing),
+    render: h => h(Home),
 }).$mount('#landing');
 
 new Vue({
