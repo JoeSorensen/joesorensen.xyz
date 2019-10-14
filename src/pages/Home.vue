@@ -25,4 +25,4 @@
     }
 </style>
 
-<style src="../assets/tailwind.css"></style>
+<style src="../assets/css/tailwind.css"></style>

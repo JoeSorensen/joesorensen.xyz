@@ -3,7 +3,7 @@
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
-                    <img src="../assets/Logo_White.png" style="opacity: 0" width="50">
+                    <img src="../assets/img/Logo_White.png" style="opacity: 0" width="50">
                 </a>
                 <div class="block lg:hidden pr-4">
                     <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none"
@@ -98,7 +98,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('../assets/splash.jpg');
+        background-image: url('../assets/img/splash.jpg');
 
         /* Center and scale the image nicely */
         background-position: center;

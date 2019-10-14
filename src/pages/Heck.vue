@@ -15,7 +15,7 @@
         min-height: 100%;
         margin: auto;
         padding: 0;
-        background-image: url('../assets/heck.png');
+        background-image: url('../assets/img/heck.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         bottom: 0px;
@@ -23,4 +23,4 @@
     }
 </style>
 
-<style src="../assets/tailwind.css"></style>
+<style src="../assets/css/tailwind.css"></style>

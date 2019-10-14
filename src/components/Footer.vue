@@ -5,7 +5,7 @@
             <div class="w-full flex flex-col md:flex-row py-6">
 
                 <div class="flex-1 mb-5" style="margin-right: 50px">
-                    <img src="../assets/NLogo.png" style="filter: invert(100%); margin-right: 100px">
+                    <img src="../assets/img/NLogo.png" style="filter: invert(100%); margin-right: 100px">
                 </div>
 
 

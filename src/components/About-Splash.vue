@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute w-full h-screen splash">
+    <div class="bg-black absolute w-full h-screen splash">
         <logo text="About"/>
         <div class="relative -mt-12 lg:-mt-24" style="position: absolute; bottom: 0; width: 100%;">
             <svg version="1.1" viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('../assets/about.jpg');
+        background-image: url('../assets/img/about.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

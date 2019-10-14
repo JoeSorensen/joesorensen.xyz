@@ -1,6 +1,6 @@
 <template>
     <div class="bg-black h-screen">
-        <img class="heck" src="../assets/heck.png">
+        <img class="heck" src="../assets/img/heck.png">
         <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Error 404. The page you were
             looking for wasn't found. Sorry.</h1>
         <div class="w-full mb-4">
@@ -28,4 +28,4 @@
     }
 </style>
 
-<style src="../assets/tailwind.css"></style>
+<style src="../assets/css/tailwind.css"></style>

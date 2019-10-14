@@ -2,17 +2,62 @@
     <div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
             <div class="w-full items-center sm:w-1/2 p-6 mt-6">
-                <carousel :autoplay="true" :autoplay-timeout="3000" :loop="true" :per-page="1">
+                <carousel :autoplay=true :autoplay-timeout="5000" :loop="true" :per-page="1" :speed="1500"
+                          pagination-active-color="#00ff88" pagination-color="#ffffff">
                     <slide>
-                        <card></card>
+                        <card
+                                act1="See it in action"
+                                act1-url="/discord"
+                                img="StarBot2_logo.png"
+                                sTitle="A discord bot written in Java"
+                                title="StarBot2"
+                        >
+                            Using DV8FromTheWorld's JDA and Jagrosh's JDA-Utilities, StarBot2 was written for my discord
+                            server. Its features inclue XP, twitch announcements, and other random and fun things.
+                        </card>
+                    </slide>
+                    <slide>
+                        <card
+                                act1="TRL's Soundcloud"
+                                act1-url="https://soundcloud.com/therealmlabel"
+                                sTitle="Another discord bot written in Java"
+                                title="RealmBot"
+                        >
+                            RealmBot was also made with DV8FromTheWorld's JDA and Jagrosh's JDA-Utilities for The Realm
+                            Label. This bot is no longer maintained.
+                        </card>
+                    </slide>
+                    <slide>
+                        <card
+                                act1="Check out the source"
+                                act1-url="https://github.com/joesorensen/joesorensen.xyz"
+                                img="website_icon.png"
+                                sTitle="Yep, this one."
+                                title="This website!"
+                        >
+                            I think this one is kind of obvious. This website is hard-coded using VueJS 2 webpack and
+                            tailwind css for styling!
+                        </card>
+                    </slide>
+                    <slide>
+                        <card
+                                act1="My github"
+                                act1-url="https://github.com/joesorensen/"
+                                img="GitHub_Icon.png"
+                                sTitle="The public stuff at least"
+                                title="Check out the rest..."
+                        >
+                            Listed here are just a few of my dev projects, but you can check out all of my public work
+                            on GitHub!
+                        </card>
                     </slide>
                 </carousel>
             </div>
-            <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="w-5/6 my-auto sm:w-1/2 p-6">
                 <div class="align-middle">
                     <h3 class="text-3xl text-white font-bold leading-none mb-3">My Work</h3>
-                    <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        at ipsum eu nunc commodo posuere et sit amet ligula.<br/><br/>
+                    <p class="text-gray-400 mb-8">Listed to the left is all my work as a developer. Scroll down a bit to
+                        see all of my work as an artist.<br/><br/>
 
                     </p>
                 </div>
