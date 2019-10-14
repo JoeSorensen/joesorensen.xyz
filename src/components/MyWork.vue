@@ -48,7 +48,11 @@
                                 title="Check out the rest..."
                         >
                             Listed here are just a few of my dev projects, but you can check out all of my public work
-                            on GitHub!
+                            on GitHub!<br/><br/>
+
+                            Image by: <a class="hover:underline text-blue-200 mb-8"
+                                         href="https://jackthevulture.tumblr.com"
+                                         target="_blank">JackTheVulture</a>
                         </card>
                     </slide>
                 </carousel>
@@ -56,11 +60,12 @@
             <div class="w-5/6 my-auto sm:w-1/2 p-6">
                 <div class="align-middle">
                     <h3 class="text-3xl text-white font-bold leading-none mb-3">My Work</h3>
-                    <p class="text-gray-400 mb-8">Listed to the left is all my work as a developer. Scroll down a bit to
-                        see all of my work as an artist.<br/><br/>
+                    <p class="text-gray-400 mb-8">Listed to the left is all my work as a developer. <br/><br/>
 
                     </p>
                 </div>
+                <!--For later: Scroll down a bit to
+                        see all of my work as an artist.-->
             </div>
         </div>
 
