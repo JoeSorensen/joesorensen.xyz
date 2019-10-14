@@ -22,3 +22,5 @@
         top: 120px;
     }
 </style>
+
+<style src="../assets/tailwind.css"></style>
