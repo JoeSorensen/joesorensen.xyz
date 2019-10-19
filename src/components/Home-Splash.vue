@@ -52,7 +52,7 @@
     import Logo from './Logo.vue'
 
     export default {
-        name: 'home',
+        name: 'home-splash',
         components: {
             Logo
         },

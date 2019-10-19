@@ -1,10 +1,16 @@
 <template>
-    <div class="heck"></div>
+    <div>
+        <navbar/>
+        <div class="heck"></div>
+    </div>
 </template>
 
 <script>
+    import Navbar from "../components/Navbar";
+
     export default {
-        name: 'heck'
+        name: 'heck',
+        components: {Navbar}
     }
 </script>
 

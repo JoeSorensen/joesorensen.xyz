@@ -26,7 +26,7 @@
     import Logo from "./Logo.vue";
 
     export default {
-        name: "splash",
+        name: "about-splash",
         components: {
             Logo
         },

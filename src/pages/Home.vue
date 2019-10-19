@@ -1,21 +1,27 @@
 <template>
-    <section class="bg-black border-b py-8">
-        <div class="container max-w-5xl mx-auto m-8">
-            <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Hi!</h1>
-            <div class="w-full mb-4">
-                <div class="h-1 mx-auto gradient w-64 opacity-55 my-0 py-0 rounded-t"></div>
+    <div>
+        <home-splash/>
+        <section class="bg-black border-b py-8">
+            <div class="container max-w-5xl mx-auto m-8">
+                <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Hi!</h1>
+                <div class="w-full mb-4">
+                    <div class="h-1 mx-auto gradient w-64 opacity-55 my-0 py-0 rounded-t"></div>
+                </div>
+                <introduction/>
             </div>
-            <introduction/>
-        </div>
-    </section>
+        </section>
+        <foot credit="TchuMimi"></foot>
+    </div>
 </template>
 
 <script>
     import Introduction from "../components/Home-Introduction";
+    import HomeSplash from "../components/Home-Splash";
+    import Foot from "../components/Footer";
 
     export default {
-        name: "Home",
-        components: {Introduction}
+        name: "home",
+        components: {Foot, HomeSplash, Introduction}
     }
 </script>
 

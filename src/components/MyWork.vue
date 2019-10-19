@@ -73,14 +73,14 @@
 </template>
 
 <script>
+    import Vue from 'vue';
     import Card from "./Card";
+    import VueCarousel from 'vue-carousel';
+
+    Vue.use(VueCarousel);
 
     export default {
         name: "MyWork",
         components: {Card}
     }
 </script>
-
-<style scoped>
-
-</style>
