@@ -22,9 +22,11 @@
     </div>
 </template>
 
-<script>
-    export default {
-        name: "Card",
+<script lang="ts">
+    import {Component, Vue} from "vue-property-decorator";
+
+    @Component ({
+        name: "card",
         props: {
             title: String,
             sTitle: String,
@@ -39,5 +41,7 @@
                 return require('../assets/img/' + img);
             }
         }
-    }
+    })
+
+    export default class Card extends Vue {}
 </script>

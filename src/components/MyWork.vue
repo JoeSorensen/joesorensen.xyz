@@ -72,15 +72,17 @@
     </div>
 </template>
 
-<script>
-    import Vue from 'vue';
-    import Card from "./Card";
+<script lang="ts">
+    import Card from "./Card.vue";
     import VueCarousel from 'vue-carousel';
+    import {Component, Vue} from "vue-property-decorator";
 
     Vue.use(VueCarousel);
 
-    export default {
+    @Component ({
         name: "MyWork",
         components: {Card}
-    }
+    })
+
+    export default class MyWork extends Vue {}
 </script>

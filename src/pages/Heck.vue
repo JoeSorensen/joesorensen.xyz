@@ -5,13 +5,16 @@
     </div>
 </template>
 
-<script>
-    import Navbar from "../components/Navbar";
+<script lang="ts">
+    import Navbar from "../components/Navbar.vue";
+    import {Component, Vue} from "vue-property-decorator";
 
-    export default {
+    @Component ({
         name: 'heck',
         components: {Navbar}
-    }
+    })
+
+    export default class Heck extends Vue {}
 </script>
 
 <style scoped>

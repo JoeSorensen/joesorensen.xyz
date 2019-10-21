@@ -22,15 +22,18 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
     import Logo from "./Logo.vue";
+    import {Component, Vue} from "vue-property-decorator";
 
-    export default {
+    @Component ({
         name: "about-splash",
         components: {
             Logo
         },
-    }
+    })
+
+    export default class AboutSplash extends Vue {}
 </script>
 
 <style scoped>

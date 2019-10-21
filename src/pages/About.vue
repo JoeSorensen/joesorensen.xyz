@@ -41,26 +41,28 @@
     </div>
 </template>
 
-<script>
-    import Vue from 'vue';
-    import MyWork from "../components/MyWork";
+<script lang="ts">
+    import MyWork from "../components/MyWork.vue";
     import browserDetect from "vue-browser-detect-plugin";
     import {library} from '@fortawesome/fontawesome-svg-core';
     import {faDragon} from '@fortawesome/free-solid-svg-icons';
     import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome';
-    import AboutSplash from "../components/About-Splash";
-    import Navbar from "../components/Navbar";
-    import Foot from "../components/Footer"
+    import AboutSplash from "../components/About-Splash.vue";
+    import Navbar from "../components/Navbar.vue";
+    import Foot from "../components/Footer.vue"
+    import {Component, Vue} from "vue-property-decorator";
 
     library.add(faDragon);
 
     Vue.component('font-awesome-icon', FontAwesomeIcon);
     Vue.use(browserDetect);
 
-    export default {
+    @Component ({
         name: 'about',
         components: {Navbar, AboutSplash, MyWork, Foot}
-    }
+    })
+
+    export default class About extends Vue {}
 </script>
 
 <style scoped>

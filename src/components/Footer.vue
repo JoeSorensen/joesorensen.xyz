@@ -79,11 +79,15 @@
     </footer>
 </template>
 
-<script>
-    export default {
+<script lang="ts">
+    import {Component, Vue} from "vue-property-decorator";
+
+    @Component({
         name: 'foot',
         props: {
             credit: String
         }
-    }
+    })
+
+    export default class Foot extends Vue {}
 </script>

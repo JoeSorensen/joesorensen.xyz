@@ -16,13 +16,17 @@
     </div>
 </template>
 
-<script>
-    export default {
+<script lang="ts">
+    import {Component, Vue} from "vue-property-decorator";
+
+    @Component ({
         name: 'logo',
         props: {
             text: String
         }
-    }
+    })
+
+    export default class Logo extends Vue {}
 </script>
 
 <style scoped>

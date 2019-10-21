@@ -18,13 +18,15 @@
     </div>
 </template>
 
-<script>
-    import Vue from 'vue';
+<script lang="ts">
     import browserDetect from "vue-browser-detect-plugin";
+    import {Component, Vue} from "vue-property-decorator";
 
     Vue.use(browserDetect);
 
-    export default {
+    @Component ({
         name: 'introduction'
-    }
+    })
+
+    export default class Introduction extends Vue {}
 </script>

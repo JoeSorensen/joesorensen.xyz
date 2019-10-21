@@ -34,19 +34,21 @@
     </div>
 </template>
 
-<script>
-    export default {
+<script lang="ts">
+    import {Component, Vue} from "vue-property-decorator";
+
+    @Component({
         name: "navbar",
         props: {
             page: String
         },
         mounted() {
-            var navMenuDiv = document.getElementById("nav-content");
-            var navMenu = document.getElementById("nav-toggle");
+            const navMenuDiv = document.getElementById("nav-content");
+            const navMenu = document.getElementById("nav-toggle");
 
             document.onclick = check;
 
-            function check(e) {
+            function check(e: { target: any; }) {
                 var target = (e && e.target) || (event && event.srcElement);
 
                 //Nav Menu
@@ -77,7 +79,9 @@
                 return false;
             }
         }
-    }
+    })
+
+    export default class Navbar extends Vue {}
 </script>
 
 <style scoped>

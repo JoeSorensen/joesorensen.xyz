@@ -14,15 +14,18 @@
     </div>
 </template>
 
-<script>
-    import Introduction from "../components/Home-Introduction";
-    import HomeSplash from "../components/Home-Splash";
-    import Foot from "../components/Footer";
+<script lang="ts">
+    import Introduction from "../components/Home-Introduction.vue";
+    import HomeSplash from "../components/Home-Splash.vue";
+    import Foot from "../components/Footer.vue";
+    import {Component, Vue} from "vue-property-decorator";
 
-    export default {
+    @Component({
         name: "home",
         components: {Foot, HomeSplash, Introduction}
-    }
+    })
+
+    export default class Home extends Vue  {}
 </script>
 
 <style scoped>

@@ -48,10 +48,11 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
     import Logo from './Logo.vue'
+    import {Component, Vue} from "vue-property-decorator";
 
-    export default {
+    @Component({
         name: 'home-splash',
         components: {
             Logo
@@ -93,7 +94,9 @@
                 return false;
             }
         }
-    }
+    })
+
+    export default class HomeSplash extends Vue {}
 </script>
 
 <style scoped>
