@@ -59,7 +59,7 @@
                         } else {
                             navMenuDiv.classList.add("hidden");
                         }
-                    } else {
+                    } else if (navMenuDiv != null){
                         // click both outside link and outside menu, hide menu
                         navMenuDiv.classList.add("hidden");
                     }
@@ -67,8 +67,8 @@
 
             }
 
-            function checkParent(t: { parentNode: any; }, elm: HTMLElement | null) {
-                while (t.parentNode) {
+            function checkParent(t: HTMLElement | null, elm: HTMLElement | null) {
+                while (t != null && t.parentNode) {
                     if (t == elm) {
                         return true;
                     }
