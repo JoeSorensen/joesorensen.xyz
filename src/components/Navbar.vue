@@ -15,15 +15,13 @@
                     </button>
                 </div>
 
-                <div class="hidden lg:block" id="nav-content" v-if="page === 'about'">
-                    <ul class="inline-flex">
+                <div class="hidden lg:block" id="nav-content">
+                    <ul class="inline-flex" v-if="page === 'about'">
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white font-bold" href="">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
-                </div>
-                <div class="hidden lg:block" id="nav-content" v-else>
-                    <ul class="inline-flex">
+                    <ul class="inline-flex" v-else>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
@@ -42,17 +40,17 @@
         props: {
             page: String
         },
-        mounted() {
+        mounted: function () {
             const navMenuDiv = document.getElementById("nav-content");
             const navMenu = document.getElementById("nav-toggle");
 
             document.onclick = check;
 
             function check(e: { target: any; }) {
-                var target = (e && e.target) || (event && event.srcElement);
+                let target = (e && e.target) || (event && event.srcElement);
 
                 //Nav Menu
-                if (!checkParent(target, navMenuDiv)) {
+                if (!checkParent(target, navMenuDiv) && navMenuDiv != null) {
                     // click NOT on the menu
                     if (checkParent(target, navMenu)) {
                         // click on the link
@@ -69,7 +67,7 @@
 
             }
 
-            function checkParent(t, elm) {
+            function checkParent(t: { parentNode: any; }, elm: HTMLElement | null) {
                 while (t.parentNode) {
                     if (t == elm) {
                         return true;
