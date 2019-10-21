@@ -1,31 +1,31 @@
 module.exports = {
     pages: {
         index: {
-            entry: 'src/js/main.js',
+            entry: 'src/ts/main.ts',
             template: 'public/index.html',
             file: 'index.html'
         },
 
         about: {
-            entry: 'src/js/about.js',
+            entry: 'src/ts/about.ts',
             template: 'public/about.html',
             file: 'about.html'
         },
 
         discord: {
-            entry: 'src/js/discord.js',
+            entry: 'src/ts/discord.ts',
             template: 'public/discord.html',
             file: 'discord.html'
         },
 
         heck: {
-            entry: 'src/js/heck.js',
+            entry: 'src/ts/heck.ts',
             template: 'public/heck.html',
             file: 'heck.html'
         },
 
         404: {
-            entry: 'src/js/404.js',
+            entry: 'src/ts/404.ts',
             template: 'public/404.html',
             file: '404.html'
         }
