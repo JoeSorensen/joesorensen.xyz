@@ -25,7 +25,8 @@
         components: {Foot, HomeSplash, Introduction}
     })
 
-    export default class Home extends Vue  {}
+    export default class Home extends Vue {
+    }
 </script>
 
 <style scoped>
@@ -33,5 +34,3 @@
         background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, #0700b8 52%, #00ff88 100%);
     }
 </style>
-
-<style src="../assets/css/tailwind.css"></style>

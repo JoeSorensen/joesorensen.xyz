@@ -96,7 +96,8 @@
         }
     })
 
-    export default class HomeSplash extends Vue {}
+    export default class HomeSplash extends Vue {
+    }
 </script>
 
 <style scoped>

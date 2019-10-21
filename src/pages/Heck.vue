@@ -9,12 +9,13 @@
     import Navbar from "../components/Navbar.vue";
     import {Component, Vue} from "vue-property-decorator";
 
-    @Component ({
+    @Component({
         name: 'heck',
         components: {Navbar}
     })
 
-    export default class Heck extends Vue {}
+    export default class Heck extends Vue {
+    }
 </script>
 
 <style scoped>
@@ -31,5 +32,3 @@
         top: 120px;
     }
 </style>
-
-<style src="../assets/css/tailwind.css"></style>

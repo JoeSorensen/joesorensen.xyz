@@ -26,14 +26,15 @@
     import Logo from "./Logo.vue";
     import {Component, Vue} from "vue-property-decorator";
 
-    @Component ({
+    @Component({
         name: "about-splash",
         components: {
             Logo
         },
     })
 
-    export default class AboutSplash extends Vue {}
+    export default class AboutSplash extends Vue {
+    }
 </script>
 
 <style scoped>

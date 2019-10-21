@@ -81,7 +81,8 @@
         }
     })
 
-    export default class Navbar extends Vue {}
+    export default class Navbar extends Vue {
+    }
 </script>
 
 <style scoped>

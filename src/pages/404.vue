@@ -16,12 +16,13 @@
     import Navbar from "../components/Navbar.vue";
     import {Component, Vue} from "vue-property-decorator";
 
-    @Component ({
+    @Component({
         name: '404',
         components: {Navbar}
     })
 
-    export default class _404 extends Vue {}
+    export default class _404 extends Vue {
+    }
 </script>
 
 <style scoped>
@@ -36,5 +37,3 @@
         background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, #0700b8 52%, #00ff88 100%);
     }
 </style>
-
-<style src="../assets/css/tailwind.css"></style>

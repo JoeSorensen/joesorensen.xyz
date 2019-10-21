@@ -79,10 +79,11 @@
 
     Vue.use(VueCarousel);
 
-    @Component ({
+    @Component({
         name: "MyWork",
         components: {Card}
     })
 
-    export default class MyWork extends Vue {}
+    export default class MyWork extends Vue {
+    }
 </script>

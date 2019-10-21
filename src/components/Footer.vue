@@ -89,5 +89,6 @@
         }
     })
 
-    export default class Foot extends Vue {}
+    export default class Foot extends Vue {
+    }
 </script>

@@ -19,14 +19,15 @@
 <script lang="ts">
     import {Component, Vue} from "vue-property-decorator";
 
-    @Component ({
+    @Component({
         name: 'logo',
         props: {
             text: String
         }
     })
 
-    export default class Logo extends Vue {}
+    export default class Logo extends Vue {
+    }
 </script>
 
 <style scoped>

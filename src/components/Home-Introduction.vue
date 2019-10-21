@@ -24,9 +24,10 @@
 
     Vue.use(browserDetect);
 
-    @Component ({
+    @Component({
         name: 'introduction'
     })
 
-    export default class Introduction extends Vue {}
+    export default class Introduction extends Vue {
+    }
 </script>

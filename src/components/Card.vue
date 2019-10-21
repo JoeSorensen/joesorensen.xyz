@@ -25,7 +25,7 @@
 <script lang="ts">
     import {Component, Vue} from "vue-property-decorator";
 
-    @Component ({
+    @Component({
         name: "card",
         props: {
             title: String,
@@ -43,5 +43,6 @@
         }
     })
 
-    export default class Card extends Vue {}
+    export default class Card extends Vue {
+    }
 </script>
