@@ -1,6 +1,3 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-    .BundleAnalyzerPlugin;
-
 module.exports = {
     pages: {
         index: {
@@ -27,10 +24,16 @@ module.exports = {
             file: 'heck.html'
         },
 
-        404: {
+        "42474edac4ebfce470ab7261ae9965f8": {
+            entry: 'src/ts/gottem.ts',
+            template: 'public/42474edac4ebfce470ab7261ae9965f8.html',
+            file: '42474edac4ebfce470ab7261ae9965f8.html'
+        },
+
+        "404": {
             entry: 'src/ts/404.ts',
             template: 'public/404.html',
             file: '404.html'
         }
     },
-}
+};

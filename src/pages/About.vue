@@ -49,13 +49,14 @@
     import Navbar from "../components/Navbar.vue";
     import Foot from "../components/Footer.vue"
     import {Component, Vue} from "vue-property-decorator";
+    import MyWorkArtist from "@/components/MyWork-Artist.vue";
 
     Vue.use(browserDetect);
     Vue.use(VueLazyload);
 
     @Component({
         name: 'about',
-        components: {Navbar, AboutSplash, MyWork, Foot}
+        components: {MyWorkArtist, Navbar, AboutSplash, MyWork, Foot}
     })
 
     export default class About extends Vue {
