@@ -1,3 +1,6 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+    .BundleAnalyzerPlugin;
+
 module.exports = {
     pages: {
         index: {
@@ -30,8 +33,7 @@ module.exports = {
             file: '404.html'
         }
     },
-
-    /*publicPath: process.env.NODE_ENV === 'production'
-        ? '/joesorensen.xyz/'
-        : '/'*/
+    configureWebpack: {
+        plugins: [new BundleAnalyzerPlugin()]
+    }
 }

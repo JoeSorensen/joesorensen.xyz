@@ -7,7 +7,7 @@
                 </a>
                 <div class="block lg:hidden pr-4">
                     <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200 appearance-none focus:outline-none"
-                            id="nav-toggle">
+                            v-on:click="toggleNav">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>
                             Menu</title>
                             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
@@ -40,41 +40,16 @@
         props: {
             page: String
         },
-        mounted: function () {
-            const navMenuDiv = document.getElementById("nav-content");
-            const navMenu = document.getElementById("nav-toggle");
+        methods: {
+            toggleNav: function() {
+                const navMenuDiv = document.getElementById("nav-content");
 
-            document.onclick = check;
-
-            function check(e: { target: any; }) {
-                let target = (e && e.target) || (event && event.srcElement);
-
-                //Nav Menu
-                if (!checkParent(target, navMenuDiv) && navMenuDiv != null) {
-                    // click NOT on the menu
-                    if (checkParent(target, navMenu)) {
-                        // click on the link
-                        if (navMenuDiv.classList.contains("hidden")) {
-                            navMenuDiv.classList.remove("hidden");
-                        } else {
-                            navMenuDiv.classList.add("hidden");
-                        }
-                    } else if (navMenuDiv != null){
-                        // click both outside link and outside menu, hide menu
+                if(navMenuDiv != null) {
+                    if (navMenuDiv.classList.contains("hidden"))
+                        navMenuDiv.classList.remove("hidden");
+                    else
                         navMenuDiv.classList.add("hidden");
-                    }
                 }
-
-            }
-
-            function checkParent(t: HTMLElement | null, elm: HTMLElement | null) {
-                while (t != null && t.parentNode) {
-                    if (t == elm) {
-                        return true;
-                    }
-                    t = t.parentNode;
-                }
-                return false;
             }
         }
     })

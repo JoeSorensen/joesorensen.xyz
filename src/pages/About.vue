@@ -25,13 +25,13 @@
                                              target="_blank">@the_most_floof</a></p>
                         </div>
 
-                        <div class="w-full sm:w-1/2 p-6" v-if="$browserDetect.isChrome">
-                            <img class="w-full mx-auto" src="../assets/img/wave.webp">
+                            <div class="w-full sm:w-1/2 p-6" v-if="$browserDetect.isChrome">
+                                <img class="w-full mx-auto" src="../assets/img/wave.webp">
+                            </div>
+                            <div class="w-full sm:w-1/2 p-6" v-else>
+                                <img class="w-full mx-auto" src="../assets/img/wave.png">
+                            </div>
                         </div>
-                        <div class="w-full sm:w-1/2 p-6" v-else>
-                            <img class="w-full mx-auto" src="../assets/img/wave.png">
-                        </div>
-                    </div>
 
                     <MyWork></MyWork>
                 </div>
@@ -44,12 +44,14 @@
 <script lang="ts">
     import MyWork from "../components/MyWork.vue";
     import browserDetect from "vue-browser-detect-plugin";
+    import VueLazyload from "vue-lazyload";
     import AboutSplash from "../components/About-Splash.vue";
     import Navbar from "../components/Navbar.vue";
     import Foot from "../components/Footer.vue"
     import {Component, Vue} from "vue-property-decorator";
 
     Vue.use(browserDetect);
+    Vue.use(VueLazyload);
 
     @Component({
         name: 'about',

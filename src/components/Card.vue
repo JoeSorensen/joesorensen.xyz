@@ -1,7 +1,7 @@
 <template>
     <div class="h-full flex content-center">
-        <div class="max-w-sm mx-auto my-auto rounded bg-gray-800">
-            <img :src="getURL(img)" class="w-full rounded-t"
+        <div v-lazy-container="{ selector: 'img' }" class="max-w-sm mx-auto my-auto rounded bg-gray-800">
+            <img :data-src="getURL(img)" class="w-full rounded-t"
                  v-if="img != null">
             <div class="px-6 py-4">
                 <div class="font-bold text-xl text-white tracking-wide">{{title}}</div>
@@ -23,7 +23,10 @@
 </template>
 
 <script lang="ts">
+    import VueLazyLoad from "vue-lazyload";
     import {Component, Vue} from "vue-property-decorator";
+
+    Vue.use(VueLazyLoad);
 
     @Component({
         name: "card",
