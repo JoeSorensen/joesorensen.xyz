@@ -33,7 +33,4 @@ module.exports = {
             file: '404.html'
         }
     },
-    configureWebpack: {
-        plugins: [new BundleAnalyzerPlugin()]
-    }
 }
