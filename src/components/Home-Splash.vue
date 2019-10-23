@@ -58,10 +58,10 @@
             Logo
         },
         methods: {
-            toggleNav: function() {
+            toggleNav: function () {
                 const navMenuDiv = document.getElementById("nav-content");
 
-                if(navMenuDiv != null) {
+                if (navMenuDiv != null) {
                     if (navMenuDiv.classList.contains("hidden"))
                         navMenuDiv.classList.remove("hidden");
                     else
@@ -87,6 +87,6 @@
     }
 
     .gradient {
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,222,118,1) 50%, rgba(7,0,184,1) 100%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 222, 118, 1) 50%, rgba(7, 0, 184, 1) 100%);
     }
 </style>

@@ -15,7 +15,8 @@
         components: {Navbar}
     })
 
-    export default class Gottem extends Vue {}
+    export default class Gottem extends Vue {
+    }
 </script>
 
 <style scoped>
