@@ -87,6 +87,6 @@
     }
 
     .gradient {
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, #0700b8 52%, #00ff88 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,222,118,1) 50%, rgba(7,0,184,1) 100%);
     }
 </style>
