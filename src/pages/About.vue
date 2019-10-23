@@ -34,6 +34,8 @@
                     </div>
 
                     <MyWork></MyWork>
+                    <br>
+                    <socials></socials>
                 </div>
             </div>
         </section>
@@ -50,13 +52,14 @@
     import Foot from "../components/Footer.vue"
     import {Component, Vue} from "vue-property-decorator";
     import MyWorkArtist from "@/components/MyWork-Artist.vue";
+    import Socials from "@/components/Socials.vue";
 
     Vue.use(browserDetect);
     Vue.use(VueLazyload);
 
     @Component({
         name: 'about',
-        components: {MyWorkArtist, Navbar, AboutSplash, MyWork, Foot}
+        components: {Socials, MyWorkArtist, Navbar, AboutSplash, MyWork, Foot}
     })
 
     export default class About extends Vue {
