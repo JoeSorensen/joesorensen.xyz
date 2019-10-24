@@ -1,10 +1,9 @@
 <template>
     <div>
         <carousel :per-page="3">
-            <slide v-for="item in items">
-                <VuePureLightbox
-                        :images="[item.src]"
-                        :thumbnail="item.src"></VuePureLightbox>
+            <slide v-for="item in items" :key="item">
+                <img :src="item.src">
+                <p class="text-white">{{item.caption}}</p>
             </slide>
         </carousel>
     </div>
@@ -22,11 +21,11 @@
     })
 
     export default class MyWork_Artist extends Vue {
-        items: { src: string, thumbnail: string; }[] = [];
+        items: { src: string, caption: string; }[] = [];
 
         async mounted() {
             let data: any;
-            let result: { src: string, thumbnail: string; }[] = [];
+            let result: { src: string, caption: string; }[] = [];
             await Axios.get("https://api.imgur.com/3/album/ZjbGUpD/images", {
                 headers: {
                     "Authorization": "Client-ID 09e666748be1334"
@@ -38,9 +37,9 @@
             data.forEach((img: any) => {
                 result.push({
                     src: img.link,
-                    thumbnail: ""
+                    caption: img.description
                 })
-            })
+            });
 
             this.items = result;
         }

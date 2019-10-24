@@ -3,7 +3,7 @@
         <transition appear name="slide-fade">
             <div class="w-full">
                 <div class="-my-48" v-if="text === '' || text == null">
-                    <img class="mx-auto block" src="../assets/img/NLogo_White.png" width="650px">
+                    <img class="mx-auto block" src="../../assets/img/NLogo_White.png" width="650px">
                 </div>
                 <div class="-my-32" v-else>
                     <span class="mx-auto block text-6xl font-bold leading-tight text-center text-white">{{text}}</span>

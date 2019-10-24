@@ -41,7 +41,7 @@
         },
         methods: {
             getURL: function (img) {
-                return require('../assets/img/' + img);
+                return require('@/assets/img/' + img);
             }
         }
     })

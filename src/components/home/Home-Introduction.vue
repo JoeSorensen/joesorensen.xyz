@@ -10,10 +10,10 @@
         </div>
 
         <div class="w-full sm:w-1/2 p-6" v-if="$browserDetect.isChrome">
-            <img class="w-full mx-auto" src="../assets/img/wave.webp">
+            <img class="w-full mx-auto" src="../../assets/img/wave.webp">
         </div>
         <div class="w-full sm:w-1/2 p-6" v-else>
-            <img class="w-full mx-auto" src="../assets/img/wave.png">
+            <img class="w-full mx-auto" src="../../assets/img/wave.png">
         </div>
     </div>
 </template>

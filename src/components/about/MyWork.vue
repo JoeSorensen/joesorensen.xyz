@@ -73,7 +73,7 @@
 </template>
 
 <script lang="ts">
-    import Card from "./Card.vue";
+    import Card from "@/components/util/Card.vue";
     import VueCarousel from 'vue-carousel';
     import {Component, Vue} from "vue-property-decorator";
 

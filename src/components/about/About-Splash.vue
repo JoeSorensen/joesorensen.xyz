@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-    import Logo from "./Logo.vue";
+    import Logo from "@/components/util/Logo.vue";
     import {Component, Vue} from "vue-property-decorator";
 
     @Component({
@@ -39,7 +39,7 @@
 
 <style scoped>
     .splash {
-        background-image: url('../assets/img/about.jpg');
+        background-image: url('../../assets/img/about.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

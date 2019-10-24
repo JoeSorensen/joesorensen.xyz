@@ -34,8 +34,7 @@
                     </div>
 
                     <MyWork></MyWork>
-                    <br>
-                    <socials></socials>
+                    <MyWorkArtist></MyWorkArtist>
                 </div>
             </div>
         </section>
@@ -44,15 +43,15 @@
 </template>
 
 <script lang="ts">
-    import MyWork from "../components/MyWork.vue";
+    import MyWork from "@/components/about/MyWork.vue";
     import browserDetect from "vue-browser-detect-plugin";
     import VueLazyload from "vue-lazyload";
-    import AboutSplash from "../components/About-Splash.vue";
-    import Navbar from "../components/Navbar.vue";
-    import Foot from "../components/Footer.vue"
+    import AboutSplash from "@/components/about/About-Splash.vue";
+    import Navbar from "@/components/util/Navbar.vue";
+    import Foot from "@/components/util/Footer.vue"
     import {Component, Vue} from "vue-property-decorator";
-    import MyWorkArtist from "@/components/MyWork-Artist.vue";
-    import Socials from "@/components/Socials.vue";
+    import MyWorkArtist from "@/components/about/MyWork-Artist.vue";
+    import Socials from "@/components/about/Socials.vue";
 
     Vue.use(browserDetect);
     Vue.use(VueLazyload);

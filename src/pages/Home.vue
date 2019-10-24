@@ -15,9 +15,9 @@
 </template>
 
 <script lang="ts">
-    import Introduction from "../components/Home-Introduction.vue";
-    import HomeSplash from "../components/Home-Splash.vue";
-    import Foot from "../components/Footer.vue";
+    import Introduction from "../components/home/Home-Introduction.vue";
+    import HomeSplash from "../components/home/Home-Splash.vue";
+    import Foot from "../components/util/Footer.vue";
     import {Component, Vue} from "vue-property-decorator";
 
     @Component({
