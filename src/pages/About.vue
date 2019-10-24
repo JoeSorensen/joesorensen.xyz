@@ -34,7 +34,6 @@
                     </div>
 
                     <MyWork></MyWork>
-                    <MyWorkArtist></MyWorkArtist>
                 </div>
             </div>
         </section>
