@@ -92,25 +92,31 @@
             },
 
             draw(sketch) {
-                sketch.background('green');
-            },
 
+            },
             setup(sketch) {
                 // @ts-ignore
-                sketch.createCanvas(this.width, this.height);
+                let height = document.getElementById('calc').getBoundingClientRect().height-65;
                 // @ts-ignore
-                this.sketch = sketch
+                let width = document.getElementById('calc').getBoundingClientRect().width;
+                // @ts-ignore
+                sketch.createCanvas(width, height);
+                // @ts-ignore
+                this.sketch = sketch;
+                // @ts-ignore
+                window.onresize = function () {
+                    // @ts-ignore
+                    height = document.getElementById('calc').getBoundingClientRect().height;
+                    // @ts-ignore
+                    width = document.getElementById('calc').getBoundingClientRect().width;
+                    // @ts-ignore
+                    setTimeout(sketch.resizeCanvas(width, height), 200)
+                }
             },
 
             onResize() {
-                // @ts-ignore
-                this.sketch.resizeCanvas(this.width, this.height);
                 console.log("test")
             }
-        },
-        mounted() {
-            // @ts-ignore
-            window.addEventListener("resize", this.onResize())
         }
     })
 
