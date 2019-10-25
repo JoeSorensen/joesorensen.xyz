@@ -35,5 +35,5 @@ module.exports = {
             template: 'public/404.html',
             file: '404.html'
         }
-    },
+    }
 };

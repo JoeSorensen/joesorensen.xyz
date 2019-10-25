@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen relative splash">
+    <div id="calc" class="h-screen relative splash">
         <nav class="gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
@@ -27,6 +27,11 @@
 
         <logo/>
 
+        <vue-p5
+                @setup="setup"
+                @draw="draw"
+        ></vue-p5>
+
         <div class="absolute bottom-0 w-full -mt-12 lg:-mt-24">
             <svg version="1.1" viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -49,16 +54,33 @@
 </template>
 
 <script lang="ts">
-    import Logo from "@/components/util/Logo.vue"
+    import Logo from "@/components/util/Logo.vue";
+    import VueP5 from "vue-p5";
     import {Component, Vue} from "vue-property-decorator";
 
     @Component({
         name: 'home-splash',
         components: {
-            Logo
+            Logo,
+            VueP5
+        },
+        data() {
+            return {
+                sketch: null
+            }
+        },
+        computed: {
+            width() {
+                // @ts-ignore
+                return document.getElementById('calc') == null ? 0 : document.getElementById('calc').getBoundingClientRect().width;
+            },
+            height() {
+                // @ts-ignore
+                return document.getElementById('calc').getBoundingClientRect().height;
+            }
         },
         methods: {
-            toggleNav: function () {
+            toggleNav: function() {
                 const navMenuDiv = document.getElementById("nav-content");
 
                 if (navMenuDiv != null) {
@@ -67,7 +89,28 @@
                     else
                         navMenuDiv.classList.add("hidden");
                 }
+            },
+
+            draw(sketch) {
+                sketch.background('green');
+            },
+
+            setup(sketch) {
+                // @ts-ignore
+                sketch.createCanvas(this.width, this.height);
+                // @ts-ignore
+                this.sketch = sketch
+            },
+
+            onResize() {
+                // @ts-ignore
+                this.sketch.resizeCanvas(this.width, this.height);
+                console.log("test")
             }
+        },
+        mounted() {
+            // @ts-ignore
+            window.addEventListener("resize", this.onResize())
         }
     })
 

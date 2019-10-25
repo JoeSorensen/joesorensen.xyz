@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-            <div class="w-full items-center sm:w-1/2 p-6 mt-6">
-                <carousel :autoplay=true :autoplay-timeout="5000" :loop="true" :per-page="1" :speed="1500"
+            <div class="w-full items-center sm:w-1/2 mt-6 p-12">
+                <carousel :autoplay=true :autoplay-timeout="5000" :loop="true" :per-page="1" :speed="1500" :navigation-enabled="true"
                           pagination-active-color="#00ff88" pagination-color="#ffffff">
                     <slide>
                         <card
@@ -60,7 +60,7 @@
             <div class="w-5/6 my-auto sm:w-1/2 p-6">
                 <div class="align-middle">
                     <h3 class="text-3xl text-white font-bold leading-none mb-3">My Work</h3>
-                    <p class="text-gray-400 mb-8">Listed to the left is all my work as a developer. <br/><br/>
+                    <p class="text-gray-400 mb-8">Here's some of my work as a developer! <br/><br/>
 
                     </p>
                 </div>
@@ -87,3 +87,11 @@
     export default class MyWork extends Vue {
     }
 </script>
+
+<style lang="scss">
+    .VueCarousel {
+        .VueCarousel-navigation-button {
+            color: white;
+        }
+    }
+</style>

@@ -35,8 +35,8 @@
         transition: all 2s ease;
     }
 
-    .slide-fade-enter, .slide-fade-leave-to {
-        transform: translateY(20px);
+    .slide-fade-enter {
+        transform: translateY(40px);
         opacity: 0;
     }
 </style>
