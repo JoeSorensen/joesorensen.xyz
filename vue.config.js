@@ -1,24 +1,30 @@
 module.exports = {
     pages: {
-        index: {
+        "index": {
             entry: 'src/ts/main.ts',
             template: 'public/index.html',
             file: 'index.html'
         },
 
-        about: {
+        "about": {
             entry: 'src/ts/about.ts',
             template: 'public/about.html',
             file: 'about.html'
         },
 
-        discord: {
+        "music": {
+            entry: 'src/ts/music.ts',
+            template: 'public/music.html',
+            file: 'music.html'
+        },
+
+        "discord": {
             entry: 'src/ts/discord.ts',
             template: 'public/discord.html',
             file: 'discord.html'
         },
 
-        heck: {
+        "heck": {
             entry: 'src/ts/heck.ts',
             template: 'public/heck.html',
             file: 'heck.html'

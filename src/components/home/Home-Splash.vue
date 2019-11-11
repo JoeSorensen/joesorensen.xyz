@@ -1,6 +1,6 @@
 <template>
-    <div id="calc" class="h-screen relative splash">
-        <nav class="gradient">
+    <div class="h-screen relative splash">
+        <nav class="absolute w-full z-20 gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
                     <img src="../../assets/img/Logo_White.png" style="opacity: 0" width="50">
@@ -17,22 +17,35 @@
 
                 <div class="hidden lg:block" id="nav-content">
                     <ul class="inline-flex">
-                        <li><a class="px-4 text-white font-bold" href="/">Home</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/music">Music</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <logo/>
+        <logo class="pointer-events-none h-full z-10"/>
 
-        <vue-p5
-                @setup="setup"
-                @draw="draw"
-        ></vue-p5>
+        <transition appear name="fade">
+            <vue-particles class="relative top-0 left-0 w-full h-full"
+                           color="#dedede"
+                           :particleOpacity="0.7"
+                           :particlesNumber="80"
+                           shapeType="circle"
+                           :particleSize="4"
+                           linesColor="#dedede"
+                           :linesWidth="1"
+                           :lineLinked="true"
+                           :lineOpacity="0.4"
+                           :linesDistance="150"
+                           :moveSpeed="3"
+            >
+            </vue-particles>
+        </transition>
 
-        <div class="absolute bottom-0 w-full -mt-12 lg:-mt-24">
+        <div class="absolute pointer-events-none bottom-0 w-full -mt-12 lg:-mt-24">
             <svg version="1.1" viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
@@ -55,29 +68,15 @@
 
 <script lang="ts">
     import Logo from "@/components/util/Logo.vue";
-    import VueP5 from "vue-p5";
+    import VueParticles from "vue-particles";
     import {Component, Vue} from "vue-property-decorator";
+
+    Vue.use(VueParticles);
 
     @Component({
         name: 'home-splash',
         components: {
             Logo,
-            VueP5
-        },
-        data() {
-            return {
-                sketch: null
-            }
-        },
-        computed: {
-            width() {
-                // @ts-ignore
-                return document.getElementById('calc') == null ? 0 : document.getElementById('calc').getBoundingClientRect().width;
-            },
-            height() {
-                // @ts-ignore
-                return document.getElementById('calc').getBoundingClientRect().height;
-            }
         },
         methods: {
             toggleNav: function() {
@@ -89,33 +88,6 @@
                     else
                         navMenuDiv.classList.add("hidden");
                 }
-            },
-
-            draw(sketch) {
-
-            },
-            setup(sketch) {
-                // @ts-ignore
-                let height = document.getElementById('calc').getBoundingClientRect().height-65;
-                // @ts-ignore
-                let width = document.getElementById('calc').getBoundingClientRect().width;
-                // @ts-ignore
-                sketch.createCanvas(width, height);
-                // @ts-ignore
-                this.sketch = sketch;
-                // @ts-ignore
-                window.onresize = function () {
-                    // @ts-ignore
-                    height = document.getElementById('calc').getBoundingClientRect().height;
-                    // @ts-ignore
-                    width = document.getElementById('calc').getBoundingClientRect().width;
-                    // @ts-ignore
-                    setTimeout(sketch.resizeCanvas(width, height), 200)
-                }
-            },
-
-            onResize() {
-                console.log("test")
             }
         }
     })
@@ -125,6 +97,14 @@
 </script>
 
 <style scoped>
+    .fade-enter-active {
+        transition: all 5s ease;
+    }
+
+    .fade-enter{
+        opacity: 0;
+    }
+
     .splash {
         background-image: url('../../assets/img/splash.jpg');
 

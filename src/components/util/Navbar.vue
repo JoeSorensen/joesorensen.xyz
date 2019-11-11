@@ -19,11 +19,19 @@
                     <ul class="inline-flex" v-if="page === 'about'">
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white font-bold" href="">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/music">Music</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
+                    </ul>
+                    <ul class="inline-flex" v-else-if="page === 'music'">
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
+                        <li><a class="px-4 text-white font-bold" href="">Music</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                     <ul class="inline-flex" v-else>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/">Home</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/about">About</a></li>
+                        <li><a class="px-4 text-white hover:text-blue-200" href="/music">Music</a></li>
                         <li><a class="px-4 text-white hover:text-blue-200" href="/discord">Discord</a></li>
                     </ul>
                 </div>
