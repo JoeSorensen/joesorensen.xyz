@@ -4,3 +4,4 @@ declare module 'vue-particles';
 declare module '@fortawesome/*';
 declare module 'axios';
 declare module 'vue-pure-lightbox'
+declare module 'vue-parallaxy'

@@ -33,4 +33,16 @@
     .gradient {
         background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, #0700b8 52%, #00ff88 100%);
     }
+
+    /*The Wrapper*/
+    .my-scrollbar{
+        width: 5%;
+        min-width: 30px;
+        max-height: 450px;
+    }
+
+    /*The Content*/
+    .scroll-me{
+        min-width: 7500px;
+    }
 </style>

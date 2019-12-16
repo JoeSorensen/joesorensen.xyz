@@ -73,7 +73,9 @@
             </div>
         </div>
 
-        <p class="block text-center text-gray-500 m-2">Splash image by {{credit}}. Please keep in mind that currently this
+        <p v-if="credit !== undefined" class="block text-center text-gray-500 m-2">Splash image by {{credit}}. Please keep in mind that currently this
+            website is under active development.</p>
+        <p v-else class="block text-center text-gray-500 m-2">Please keep in mind that currently this
             website is under active development.</p>
 
     </footer>

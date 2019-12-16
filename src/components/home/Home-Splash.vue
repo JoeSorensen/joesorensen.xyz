@@ -1,6 +1,6 @@
 <template>
     <div class="h-screen relative splash">
-        <nav class="absolute w-full z-20 gradient">
+        <nav class="absolute w-full z-30 gradient">
             <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                 <a class="font-bold text-2xl lg:text-4xl" href="heck">
                     <img src="../../assets/img/Logo_White.png" style="opacity: 0" width="50">
@@ -26,10 +26,10 @@
             </div>
         </nav>
 
-        <logo class="pointer-events-none h-full z-10"/>
+        <logo class="pointer-events-none h-full z-20"/>
 
         <transition appear name="fade">
-            <vue-particles class="relative top-0 left-0 w-full h-full"
+            <vue-particles class="absolute top-0 left-0 w-full h-full z-10"
                            color="#dedede"
                            :particleOpacity="0.7"
                            :particlesNumber="80"
@@ -45,7 +45,11 @@
             </vue-particles>
         </transition>
 
-        <div class="absolute pointer-events-none bottom-0 w-full -mt-12 lg:-mt-24">
+        <parallax class="relative w-full h-full z-0">
+            <img src="../../assets/img/splash.jpg">
+        </parallax>
+
+        <div class="absolute pointer-events-none bottom-0 w-full z-20 -mt-12 lg:-mt-24">
             <svg version="1.1" viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
@@ -68,6 +72,7 @@
 
 <script lang="ts">
     import Logo from "@/components/util/Logo.vue";
+    import Parallax from "vue-parallaxy";
     import VueParticles from "vue-particles";
     import {Component, Vue} from "vue-property-decorator";
 
@@ -76,7 +81,7 @@
     @Component({
         name: 'home-splash',
         components: {
-            Logo,
+            Logo, Parallax,
         },
         methods: {
             toggleNav: function() {
@@ -106,7 +111,7 @@
     }
 
     .splash {
-        background-image: url('../../assets/img/splash.jpg');
+        background-image: url('');
 
         /* Center and scale the image nicely */
         background-position: center;
