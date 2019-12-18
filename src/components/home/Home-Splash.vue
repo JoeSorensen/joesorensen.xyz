@@ -47,7 +47,7 @@
 
         <ParallaxContainer class="relative w-full h-full z-0">
             <ParallaxImage :factor="0.49" :height="1251" :width="2208">
-                <img class="h-screen w-screen object-cover" src="../../assets/img/splash.jpg">
+                <img class="h-screen w-screen object-cover select-none" src="../../assets/img/splash.jpg">
             </ParallaxImage>
         </ParallaxContainer>
 
