@@ -1,15 +1,20 @@
 <template>
     <div>
         <div class="h-screen relative">
+            <navbar class="z-30" page="about"/>
             <about-splash/>
-            <navbar page="about"/>
         </div>
         <section class="bg-black border-b py-8">
             <div class="container max-w-5xl mx-auto m-8">
-                <h1 class="w-full my-4 text-5xl font-bold leading-tight text-center text-white">More about me</h1>
-                <div class="w-full mb-4">
-                    <div class="h-1 mx-auto gradient w-64 opacity-55 my-0 py-0 rounded-t"></div>
-                </div>
+                <ParallaxContainer>
+                    <ParallaxElement :factor="0.05">
+                        <h1 class="w-full my-4 text-5xl font-bold leading-tight text-center text-white">More about
+                            me</h1>
+                        <div class="w-full mb-4">
+                            <div class="h-1 mx-auto gradient w-64 opacity-55 my-0 py-0 rounded-t"></div>
+                        </div>
+                    </ParallaxElement>
+                </ParallaxContainer>
                 <div>
                     <div class="flex flex-wrap">
                         <div class="w-5/6 my-auto sm:w-1/2 p-6">
@@ -26,14 +31,14 @@
                         </div>
 
                         <div class="w-full sm:w-1/2 p-6" v-if="$browserDetect.isChrome">
-                            <img class="w-full mx-auto" src="../assets/img/wave.webp">
+                            <img alt="" class="w-full mx-auto" src="../assets/img/wave.webp">
                         </div>
                         <div class="w-full sm:w-1/2 p-6" v-else>
-                            <img class="w-full mx-auto" src="../assets/img/wave.png">
+                            <img alt="" class="w-full mx-auto" src="../assets/img/wave.png">
                         </div>
                     </div>
 
-                    <MyWork></MyWork>
+                    <MyWork/>
                 </div>
             </div>
         </section>
@@ -44,20 +49,25 @@
 <script lang="ts">
     import MyWork from "@/components/about/MyWork.vue";
     import browserDetect from "vue-browser-detect-plugin";
-    import VueLazyload from "vue-lazyload";
     import AboutSplash from "@/components/about/About-Splash.vue";
     import Navbar from "@/components/util/Navbar.vue";
     import Foot from "@/components/util/Footer.vue"
     import {Component, Vue} from "vue-property-decorator";
     import MyWorkArtist from "@/components/about/MyWork-Artist.vue";
     import Socials from "@/components/about/Socials.vue";
+    import ParallaxContainer from "@/components/util/ParallaxContainer.vue";
+    import ParallaxElement from "@/components/util/ParallaxElement.vue";
+    import ParallaxImage from "@/components/util/ParallaxImage.vue";
 
     Vue.use(browserDetect);
-    Vue.use(VueLazyload);
 
     @Component({
         name: 'about',
-        components: {Socials, MyWorkArtist, Navbar, AboutSplash, MyWork, Foot}
+        components: {
+            ParallaxImage,
+            ParallaxElement,
+            ParallaxContainer, Socials, MyWorkArtist, Navbar, AboutSplash, MyWork, Foot
+        }
     })
 
     export default class About extends Vue {

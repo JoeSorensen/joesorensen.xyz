@@ -1,7 +1,7 @@
 <template>
     <div>
         <carousel :per-page="3">
-            <slide v-for="item in items" :key="item">
+            <slide :key="item" v-for="item in items">
                 <img :src="item.src">
                 <p class="text-white">{{item.caption}}</p>
             </slide>

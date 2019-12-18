@@ -13,7 +13,8 @@
                     <p class="uppercase text-gray-500 md:mb-6">Links</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a class="no-underline hover:underline text-gray-200 hover:text-glow_green" href="home">Home</a>
+                            <a class="no-underline hover:underline text-gray-200 hover:text-glow_green"
+                               href="home">Home</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a class="no-underline hover:underline text-gray-200 hover:text-glow_green"
@@ -73,9 +74,10 @@
             </div>
         </div>
 
-        <p v-if="credit !== undefined" class="block text-center text-gray-500 m-2">Splash image by {{credit}}. Please keep in mind that currently this
+        <p class="block text-center text-gray-500 m-2" v-if="credit !== undefined">Splash image by {{credit}}. Please
+            keep in mind that currently this
             website is under active development.</p>
-        <p v-else class="block text-center text-gray-500 m-2">Please keep in mind that currently this
+        <p class="block text-center text-gray-500 m-2" v-else>Please keep in mind that currently this
             website is under active development.</p>
 
     </footer>

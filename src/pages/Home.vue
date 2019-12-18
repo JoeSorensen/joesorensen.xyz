@@ -35,14 +35,14 @@
     }
 
     /*The Wrapper*/
-    .my-scrollbar{
+    .my-scrollbar {
         width: 5%;
         min-width: 30px;
         max-height: 450px;
     }
 
     /*The Content*/
-    .scroll-me{
+    .scroll-me {
         min-width: 7500px;
     }
 </style>

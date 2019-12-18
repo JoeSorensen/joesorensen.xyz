@@ -29,25 +29,27 @@
         <logo class="pointer-events-none h-full z-20"/>
 
         <transition appear name="fade">
-            <vue-particles class="absolute top-0 left-0 w-full h-full z-10"
-                           color="#dedede"
-                           :particleOpacity="0.7"
-                           :particlesNumber="80"
-                           shapeType="circle"
-                           :particleSize="4"
-                           linesColor="#dedede"
-                           :linesWidth="1"
-                           :lineLinked="true"
+            <vue-particles :lineLinked="true"
                            :lineOpacity="0.4"
                            :linesDistance="150"
+                           :linesWidth="1"
                            :moveSpeed="3"
+                           :particleOpacity="0.7"
+                           :particleSize="4"
+                           :particlesNumber="80"
+                           class="absolute top-0 left-0 w-full h-full z-10"
+                           color="#dedede"
+                           linesColor="#dedede"
+                           shapeType="circle"
             >
             </vue-particles>
         </transition>
 
-        <parallax class="relative w-full h-full z-0">
-            <img src="../../assets/img/splash.jpg">
-        </parallax>
+        <ParallaxContainer class="relative w-full h-full z-0">
+            <ParallaxImage :factor="0.49" :height="1251" :width="2208">
+                <img class="h-screen w-screen object-cover" src="../../assets/img/splash.jpg">
+            </ParallaxImage>
+        </ParallaxContainer>
 
         <div class="absolute pointer-events-none bottom-0 w-full z-20 -mt-12 lg:-mt-24">
             <svg version="1.1" viewBox="0 0 1428 174" xmlns="http://www.w3.org/2000/svg"
@@ -72,19 +74,24 @@
 
 <script lang="ts">
     import Logo from "@/components/util/Logo.vue";
-    import Parallax from "vue-parallaxy";
     import VueParticles from "vue-particles";
     import {Component, Vue} from "vue-property-decorator";
+    import ParallaxContainer from "@/components/util/ParallaxContainer.vue";
+    import ParallaxElement from "@/components/util/ParallaxElement.vue";
+    import ParallaxImage from "@/components/util/ParallaxImage.vue";
 
     Vue.use(VueParticles);
 
     @Component({
         name: 'home-splash',
         components: {
-            Logo, Parallax,
+            ParallaxImage,
+            ParallaxElement,
+            ParallaxContainer,
+            Logo
         },
         methods: {
-            toggleNav: function() {
+            toggleNav: function () {
                 const navMenuDiv = document.getElementById("nav-content");
 
                 if (navMenuDiv != null) {
@@ -106,18 +113,8 @@
         transition: all 5s ease;
     }
 
-    .fade-enter{
+    .fade-enter {
         opacity: 0;
-    }
-
-    .splash {
-        background-image: url('');
-
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
     }
 
     .gradient {

@@ -2,7 +2,8 @@
     <div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
             <div class="w-full items-center sm:w-1/2 mt-6 p-12">
-                <carousel :autoplay=true :autoplay-timeout="5000" :loop="true" :per-page="1" :speed="1500" :navigation-enabled="true"
+                <carousel :autoplay=true :autoplay-timeout="5000" :loop="true" :navigation-enabled="true" :per-page="1"
+                          :speed="1500"
                           pagination-active-color="#00ff88" pagination-color="#ffffff">
                     <slide>
                         <card
