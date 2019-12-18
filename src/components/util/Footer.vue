@@ -18,7 +18,7 @@
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a class="no-underline hover:underline text-gray-200 hover:text-glow_green"
-                               href="discord">Join My Discord</a>
+                               href="about">About</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a class="no-underline"
@@ -39,18 +39,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-1" style="opacity: 0;">
+                <div class="flex-1">
                     <p class="uppercase text-gray-500 md:mb-6">Social</p>
                     <ul class="list-reset mb-6">
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a class="no-underline hover:underline text-gray-200 hover:text-glow_green" href="#">Facebook</a>
+                            <a class="no-underline text-sm" href="https://soundcloud.com/joesorensenedm">
+                                <font-awesome-icon class="text-gray-200 hover:text-glow_green" :icon="['fab', 'soundcloud']" size="2x"/>
+                            </a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                             <a class="no-underline hover:underline text-gray-200 hover:text-glow_green" href="#">Linkedin</a>
                         </li>
                         <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                            <a class="no-underline hover:underline text-gray-200 hover:text-glow_green"
-                               href="#">Twitter</a>
+                            <a class="no-underline text-sm" href="discord">
+                                <font-awesome-icon class="text-gray-200 hover:text-glow_green" :icon="['fab', 'discord']" size="2x"/>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -84,10 +87,16 @@
 </template>
 
 <script lang="ts">
+    import { library } from "@fortawesome/fontawesome-svg-core";
+    import { faSoundcloud, faDiscord } from "@fortawesome/free-brands-svg-icons";
+    import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
     import {Component, Vue} from "vue-property-decorator";
+
+    library.add(faSoundcloud, faDiscord);
 
     @Component({
         name: 'foot',
+        components: {FontAwesomeIcon},
         props: {
             credit: String
         }
